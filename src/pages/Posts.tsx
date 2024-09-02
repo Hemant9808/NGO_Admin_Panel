@@ -46,7 +46,8 @@ const Events: React.FC = () => {
 
   const fetchPosts = async () => {
     try {
-      const response = await fetch('http://localhost:3000/getAllPost'); // Adjust the endpoint if necessary
+      const response = await fetch("https://ngo-backend-1.onrender.com/getAllPost"); 
+        // 'http://localhost:3000/getAllPost'
       if (!response.ok) {
         throw new Error('Network response was not ok');
       }
